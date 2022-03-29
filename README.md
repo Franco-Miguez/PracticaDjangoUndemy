@@ -1,2 +1,2 @@
 # PracticaDjangoUndemy
-seguire las practicas de Master en python de Víctor Robles en Undemy
+seguire las practicas del Master en python de Víctor Robles en Udemy
