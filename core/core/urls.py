@@ -16,6 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from myapp import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index, name='home'),
+    path('page/<int:number>', views.page, name="page"),
+    path('page/', views.page, name="page"),
+    path('hello-word/', views.hello_word, name="hello_word"),
+    path('contact/<str:name>', views.contact, name='contact'),
+    path('contact/', views.contact, name='contact'),
 ]
