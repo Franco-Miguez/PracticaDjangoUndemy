@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='es'>
+
+    <head>
+        <meta charset="utf-8">
+        <title> {% block title %}{% endblock  %}
+            | Franco Miguez</title> 
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    </head>
+
+    <body>
+        <header>
+            <h1>site web with Django | Franco Miguez</h1>
+        </header>
+        <br>
+        <nav>
+            <ul>
+                <li><a href=''>home</a></li>
+                <li><a href='/hello-word'>hello word</a></li>
+                <li><a href='/page'>page</a></li>
+                <li><a href='/contact'>contact</a></li>
+            </ul>
+        </nav>
+        <br>
+
+        <div id='content'>
+            {% block content %}{% endblock%}
+        </div>
+        <hr>
+        <footer>
+            <p>Page make for: Franco Miguez &copy</p>
+        </footer>
+    </body>
+</html>
