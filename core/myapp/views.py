@@ -17,4 +17,4 @@ def page(request, number=0):
     return render(request, 'page.html')
 
 def contact(request, name=""):
-    return render(request, 'contact.html')
+    return render(request, 'contact.html', {'name':name})
